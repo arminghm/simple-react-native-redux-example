@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import { counterReducer } from '../reducers/counter/counterReducer';
+import reducer from '../reducers';
 
 export default configureStore = () => {
-  return createStore(counterReducer);
+  return createStore(reducer);
 }

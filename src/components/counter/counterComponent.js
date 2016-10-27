@@ -4,11 +4,11 @@ import {
   Text,
   TouchableHighlight
 } from 'react-native';
-import Styles from '../../styles/counter/styles';
+import CounterComponentStyle from '../../styles/counter';
 
 export default CounterComponent = (props) =>
-  <View style={Styles.container}>
-    <View style={Styles.buttonContainer}>
+  <View style={CounterComponentStyle.container}>
+    <View style={CounterComponentStyle.buttonContainer}>
       <TouchableHighlight
         onPress={()=>{props.increment()}} >
         <Text> Increment </Text>
@@ -20,7 +20,7 @@ export default CounterComponent = (props) =>
       </TouchableHighlight>
     </View>
 
-    <View style={Styles.countTextContainer} >
+    <View style={CounterComponentStyle.countTextContainer} >
       <Text> {props.count} </Text>
     </View>
   </View>

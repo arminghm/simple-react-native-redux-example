@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-export default Styles = StyleSheet.create({
+export default CounterComponentStyle = StyleSheet.create({
   container: {
     marginTop: 20
   },
